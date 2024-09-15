@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  background-image: url("images/—Pngtree—hexagonal abstract background with a_13478711.jpg");
+  background-size: cover; /* This ensures the image covers the whole element */
+  background-position: center; /* This centers the image */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  position: fixed; /* This keeps the background fixed in place */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* This places the background behind other content */
+}
+
+.navbar {
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 90px;
+}
+
+.logo {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* .navbar .list {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+} */
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content p {
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background-color: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
